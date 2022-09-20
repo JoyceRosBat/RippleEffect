@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		396DBD0B28D99C99007C2006 /* CustomTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396DBD0A28D99C99007C2006 /* CustomTapGestureRecognizer.swift */; };
 		CD62201228D86C0700E628F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62201128D86C0700E628F2 /* AppDelegate.swift */; };
 		CD62201428D86C0700E628F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62201328D86C0700E628F2 /* SceneDelegate.swift */; };
 		CD62201628D86C0700E628F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62201528D86C0700E628F2 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		396DBD0A28D99C99007C2006 /* CustomTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		CD62200E28D86C0700E628F2 /* RippleEffectPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleEffectPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD62201128D86C0700E628F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD62201328D86C0700E628F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		396DBD0928D99C7F007C2006 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				396DBD0A28D99C99007C2006 /* CustomTapGestureRecognizer.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		CD62200528D86C0700E628F2 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		CD62201028D86C0700E628F2 /* RippleEffectPOC */ = {
 			isa = PBXGroup;
 			children = (
+				396DBD0928D99C7F007C2006 /* Custom */,
 				CD62204328D88BEC00E628F2 /* Extensions */,
 				CD62201128D86C0700E628F2 /* AppDelegate.swift */,
 				CD62201328D86C0700E628F2 /* SceneDelegate.swift */,
@@ -272,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				396DBD0B28D99C99007C2006 /* CustomTapGestureRecognizer.swift in Sources */,
 				CD62204228D86CE300E628F2 /* UIView+Ext.swift in Sources */,
 				CD62204528D88BFD00E628F2 /* CABasicAnimation+Ext.swift in Sources */,
 				CD62201628D86C0700E628F2 /* ViewController.swift in Sources */,

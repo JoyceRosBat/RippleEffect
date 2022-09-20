@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         button.addRippleEffect()
         yellowView.layer.cornerRadius = 100
-        yellowView.addRippleEffect()
+        yellowView.addRippleEffect(.red)
         blueView.layer.cornerRadius = 50
         blueView.addRippleEffect()
     }
