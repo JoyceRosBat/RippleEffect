@@ -13,7 +13,9 @@ extension UIView {
         // Create a tap gesture to create the ripple effect
         // and add it to the view itself:
         let tapGesture = CustomTapGestureRecognizer(target: self, action: #selector(addRippleEffectLayer(_:)))
+        // Add the color as a parameter to the CustomTapGestureRecognizer
         tapGesture.params = [color]
+        // Add tap gesture to the view
         self.addGestureRecognizer(tapGesture)
     }
     
@@ -27,8 +29,10 @@ extension UIView {
         rippleShape.bounds = self.bounds
         // Shape layer path will be the circular path created before
         rippleShape.path = path.cgPath
-        // Fill color
+        /// Get color from params (if color does not exists,
+        // it will be gray as default)
         let color = gesture.params?.first as? UIColor ?? .gray
+        // Fill color
         rippleShape.fillColor = color.cgColor
         // Position will be the location of the tap gesture
         rippleShape.position = gesture.location(in: self)
